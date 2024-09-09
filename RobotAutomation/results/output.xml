@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.1 on darwin)" generated="2024-09-03T13:44:01.816769" rpa="false" schemaversion="5">
+<suite id="s1" name="BDDTesting" source="/Users/Robot_framework_projects/RobotAutomation/TestCases/BDDTesting">
+<suite id="s1-s1" name="TC BDD" source="/Users/Robot_framework_projects/RobotAutomation/TestCases/BDDTesting/TC_BDD.robot">
+<test id="s1-s1-t1" name="Test Case in BDD Format" line="9">
+<kw name="Given Start Browser and Maximize" owner="Resources1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-03T13:44:01.893594" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<arg>${UserUrl}</arg>
+<arg>${InputBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-03T13:44:01.893502" elapsed="1.837495"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-03T13:44:03.731338" elapsed="0.375370"/>
+</kw>
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Documentation at Keyword level</doc>
+<status status="PASS" start="2024-09-03T13:44:01.893336" elapsed="2.213775"/>
+</kw>
+<kw name="When Create Folder at Runtime" owner="Resources1">
+<kw name="Create Folder" owner="UserKeywords">
+<arg>${foldername}</arg>
+<status status="PASS" start="2024-09-03T13:44:04.108150" elapsed="0.000360"/>
+</kw>
+<kw name="Create Sub Folder" owner="UserKeywords">
+<arg>${subfoldername}</arg>
+<status status="PASS" start="2024-09-03T13:44:04.108594" elapsed="0.000116"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-03T13:44:04.108971" level="INFO">"Task Done Successfuly"</msg>
+<arg>"Task Done Successfuly"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-03T13:44:04.108829" elapsed="0.000167"/>
+</kw>
+<arg>acdb</arg>
+<arg>zxcv</arg>
+<status status="PASS" start="2024-09-03T13:44:04.107664" elapsed="0.001386"/>
+</kw>
+<kw name="Then Concatenate Username and Password" owner="Resources1">
+<kw name="Concatenate Two Values" owner="UserKeywords">
+<msg time="2024-09-03T13:44:04.109556" level="INFO">${resultval} = Testing World</msg>
+<var>${resultval}</var>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-09-03T13:44:04.109440" elapsed="0.000129"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-03T13:44:04.109673" level="INFO">Testing World</msg>
+<arg>${resultval}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-03T13:44:04.109621" elapsed="0.000127"/>
+</kw>
+<arg>Testing</arg>
+<arg>World</arg>
+<status status="PASS" start="2024-09-03T13:44:04.109301" elapsed="0.000479"/>
+</kw>
+<status status="PASS" start="2024-09-03T13:44:01.892943" elapsed="2.217139"/>
+</test>
+<status status="PASS" start="2024-09-03T13:44:01.825598" elapsed="2.284987"/>
+</suite>
+<status status="PASS" start="2024-09-03T13:44:01.817525" elapsed="2.293374"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="BDDTesting">BDDTesting</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC BDD">BDDTesting.TC BDD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
