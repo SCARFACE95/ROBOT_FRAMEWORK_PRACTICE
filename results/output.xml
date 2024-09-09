@@ -1,64 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-09-09T17:31:39.644108" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.0 on win32)" generated="2024-09-09T22:31:35.121284" rpa="false" schemaversion="5">
 <suite id="s1" name="TC BDD" source="D:\Proiecte_Python\GIT_ROBOT_AUTOMATION\RobotAutomation\TestCases\BDDTesting\TC_BDD.robot">
-<test id="s1-t1" name="Test Case in BDD Format" line="9">
+<test id="s1-t1" name="Test Case in BDD Format" line="11">
 <kw name="Given Start Browser and Maximize" owner="Resources1">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-09T17:31:39.816158" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<msg time="2024-09-09T22:31:35.297086" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
 <arg>${UserUrl}</arg>
 <arg>${InputBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-09T17:31:39.816158" elapsed="1.898923"/>
+<status status="PASS" start="2024-09-09T22:31:35.297086" elapsed="1.901502"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-09T17:31:41.715081" elapsed="0.360938"/>
+<status status="PASS" start="2024-09-09T22:31:37.199588" elapsed="0.362439"/>
 </kw>
 <arg>${Url}</arg>
 <arg>${Browser}</arg>
 <doc>Documentation at Keyword level</doc>
-<status status="PASS" start="2024-09-09T17:31:39.815157" elapsed="2.260862"/>
+<status status="PASS" start="2024-09-09T22:31:35.297086" elapsed="2.265941"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-09T22:31:37.563027" level="INFO">${random_string1} = OaUvF</msg>
+<var>${random_string1}</var>
+<arg>5</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-09T22:31:37.563027" elapsed="0.000000"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2024-09-09T22:31:37.564027" level="INFO">${random_string2} = cU7ldNL9Yn</msg>
+<var>${random_string2}</var>
+<arg>10</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-09-09T22:31:37.563027" elapsed="0.001000"/>
 </kw>
 <kw name="When Create Folder at Runtime" owner="Resources1">
 <kw name="Create Folder" owner="UserKeywords">
 <arg>${foldername}</arg>
-<status status="PASS" start="2024-09-09T17:31:42.077019" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-09T22:31:37.564027" elapsed="0.000000"/>
 </kw>
 <kw name="Create Sub Folder" owner="UserKeywords">
 <arg>${subfoldername}</arg>
-<status status="PASS" start="2024-09-09T17:31:42.077019" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-09T22:31:37.565027" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-09T17:31:42.078020" level="INFO">"Task Done Successfuly"</msg>
+<msg time="2024-09-09T22:31:37.565027" level="INFO">"Task Done Successfuly"</msg>
 <arg>"Task Done Successfuly"</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-09T17:31:42.078020" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-09T22:31:37.565027" elapsed="0.000000"/>
 </kw>
-<arg>acdb</arg>
-<arg>zxcv</arg>
-<status status="PASS" start="2024-09-09T17:31:42.076019" elapsed="0.002001"/>
+<arg>${random_string1}</arg>
+<arg>${random_string2}</arg>
+<status status="PASS" start="2024-09-09T22:31:37.564027" elapsed="0.001000"/>
 </kw>
 <kw name="Then Concatenate Username and Password" owner="Resources1">
 <kw name="Concatenate Two Values" owner="UserKeywords">
-<msg time="2024-09-09T17:31:42.078020" level="INFO">${resultval} = Testing World</msg>
+<msg time="2024-09-09T22:31:37.566027" level="INFO">${resultval} = Testing World</msg>
 <var>${resultval}</var>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-09-09T17:31:42.078020" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-09T22:31:37.565027" elapsed="0.001000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-09-09T17:31:42.079020" level="INFO">Testing World</msg>
+<msg time="2024-09-09T22:31:37.566027" level="INFO">Testing World</msg>
 <arg>${resultval}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-09T17:31:42.078020" elapsed="0.001000"/>
+<status status="PASS" start="2024-09-09T22:31:37.566027" elapsed="0.000000"/>
 </kw>
 <arg>Testing</arg>
 <arg>World</arg>
-<status status="PASS" start="2024-09-09T17:31:42.078020" elapsed="0.001000"/>
+<status status="PASS" start="2024-09-09T22:31:37.565027" elapsed="0.001000"/>
 </kw>
-<status status="PASS" start="2024-09-09T17:31:39.814149" elapsed="2.264871"/>
+<status status="PASS" start="2024-09-09T22:31:35.296086" elapsed="2.269941"/>
 </test>
-<status status="PASS" start="2024-09-09T17:31:39.645108" elapsed="2.433912"/>
+<status status="PASS" start="2024-09-09T22:31:35.123285" elapsed="2.442742"/>
 </suite>
 <statistics>
 <total>
