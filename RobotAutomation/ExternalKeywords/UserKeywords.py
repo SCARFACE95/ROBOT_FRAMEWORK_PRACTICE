@@ -14,10 +14,10 @@ import os
 
 #Rescris cu argumente
 def create_folder(foldername):
-    os.mkdir(f"/Users/andrei/test_folder/{foldername}")
+    os.mkdir(f"D:/Proiecte_Python/GIT_ROBOT_AUTOMATION/created/{foldername}")
 
 def create_sub_folder(subfoldername):
-     os.mkdir(f"/Users/andrei/test_folder/{subfoldername}")
+     os.mkdir(f"D:/Proiecte_Python/GIT_ROBOT_AUTOMATION/created/folder_subfolder/{subfoldername}")
 
 def concatenate_two_values(val1,val2):
     val3 = val1 + " " + val2
